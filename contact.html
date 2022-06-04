@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- heading section -->
+    <section class="sub-header">
+        <nav>
+            <h4 style="color: white; margin-top: 5px; margin-bottom: 0;">HelloWorld 
+                <br><hr><span style="font-size: 23px; margin-top: 0;">UNIVERSITY</span></h4>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+            <h1>Contact Us</h1>
+    </section>
+
+
+    <!-- contact us page section -->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106628.67312655048!2d75.51979047639088!3d20.99843733153801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd90fa4a1eab90f%3A0x37f67bd21bff0a3c!2z4KSc4KSz4KSX4KS-4KSC4KS1LCDgpK7gpLngpL7gpLDgpL7gpLfgpY3gpJ_gpY3gpLA!5e0!3m2!1smr!2sin!4v1654320611172!5m2!1smr!2sin" width="600" height="450" style="border:0;" allowfullscreen="" 
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+     
+    
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+               <div>
+                   <i class="fa fa-home"></i>
+                   <span>
+                       <h5>ABC Road, XYZ Building, Near Temple</h5>
+                       <p>Jalgaon, Maharashtra, INDIA</p>
+                   </span>
+               </div>
+               <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+91 7499866920</h5>
+                    <p> Monday to Saturday, 10AM to 6PM </p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>ajaychaudhari6768@gmail.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+            </div>
+            <div class="contact-col"></div>
+      
+
+        <div class="contact-col">
+            <form action="formHandler.php" method="POST">
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+                <input type="email" name="email" placeholder="Enter email address" required>
+                <input type="text" name="subject" placeholder="Enter your Subject" required>
+                <textarea rows="8" name="message" placeholder="Message"></textarea>
+                <button type="submit" class="hero-btn cyan-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+    </section>
+
+
+
+
+   <!-- footer -->
+   <section class="footer">
+       <h4>About Us</h4>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+           Expedita error eos corrupti id sed similique <br>nostrum perspiciatis veritatis 
+           iusto blanditiis rem, reiciendis ratione eius fugiat voluptatum nihil
+            sint totam? Laudantium.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p class="by">@ Design by <i class="fa fa-heart-o"></i> Ajay Chaudhari</p>
+   </section>
+
+    <!-- some javascripts -->
+    <script>
+        var navLinks = document.getElementById("navlinks");
+
+        function showmenu(){
+            navLinks.style.right = "0";
+        }
+        function hidemenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
